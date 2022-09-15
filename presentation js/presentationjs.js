@@ -158,31 +158,7 @@ switch(action){
     break;
 }
 */
-const burger = ["pain","chedar","steak","cornichon","ketchup","salade","tomate","oignon"]
-burger.splice(2,1);
-console.log(burger);
 
-burger.splice(1,1)
-console.log(burger);
-
-burger.splice(1,2,"chedar","steak");
-console.log(burger);
-burger.splice(3,1,);
-burger.splice(3,1,);
-burger.splice(3,1,);
-console.log(burger);
-
-burger.splice(3,2,"chedar","steak");
-burger.splice(5,3,"salade","oignon","ketchup");
-console.log(burger);
-
-
-/*
-1/burger vege(pas de viande)
-2/burger vegan(pas de produits animal)
-3/burger carnivore(pas de vegetal)
-4/burger custom
-5/ system de commande
 
 /*
 map => for of
