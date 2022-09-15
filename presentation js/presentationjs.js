@@ -63,7 +63,7 @@ console.log(" ");
 let feu =Math.floor(Math.random()*3);
 
 if(feu===0){
-    console.log("Le feu est vert vous pouvez avencer.");
+    console.log("Le feu est vert vous pouvez avancer.");
 }else if(feu===1){
     console.log("Le feu est orange ralentissez.");
 }else if(feu===2){
@@ -129,14 +129,16 @@ function moyenne(a,b,c,d,e){
 }
 
 console.log("moyenne "+moyenne(12,15,10,1,4));
-
-
-let val1 = 7;
-let action ="+";
-let val2 = 4;
-
+/*
+let action = prompt("quelle calc?");
+let x = prompt("val 1");
+let y = prompt("val 2");
+let val1 = parseInt(x);
+let val2 = parseInt(y);
+*
 console.log(" ");
 console.log("calculatrice: ")
+
 
 switch(action){
     case "+":
@@ -155,3 +157,38 @@ switch(action){
         console.log("division: "+division(val1,val2));
     break;
 }
+*/
+const burger = ["pain","chedar","steak","cornichon","ketchup","salade","tomate","oignon"]
+burger.splice(2,1);
+console.log(burger);
+
+burger.splice(1,1)
+console.log(burger);
+
+burger.splice(1,2,"chedar","steak");
+console.log(burger);
+burger.splice(3,1,);
+burger.splice(3,1,);
+burger.splice(3,1,);
+console.log(burger);
+
+burger.splice(3,2,"chedar","steak");
+burger.splice(5,3,"salade","oignon","ketchup");
+console.log(burger);
+
+
+/*
+1/burger vege(pas de viande)
+2/burger vegan(pas de produits animal)
+3/burger carnivore(pas de vegetal)
+4/burger custom
+5/ system de commande
+
+/*
+map => for of
+filter => tri elements selon un critere
+find => recup 1er element qui corespond
+reduce => fait la somme de l'array
+slice => supr des elements selon un indice de debut et de fin
+splice => ajoute ou enleve des elements
+*/
