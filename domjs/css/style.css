@@ -1,0 +1,19 @@
+a{
+    text-transform: uppercase;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.color-red{
+    color: red;
+}
+
+.background{
+    background-color: lime;
+}
+
+.border{
+    border: 3px solid royalblue;
+}

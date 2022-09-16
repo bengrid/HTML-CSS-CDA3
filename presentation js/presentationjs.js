@@ -129,13 +129,12 @@ function moyenne(a,b,c,d,e){
 }
 
 console.log("moyenne "+moyenne(12,15,10,1,4));
-/*
+
 let action = prompt("quelle calc?");
 let x = prompt("val 1");
 let y = prompt("val 2");
 let val1 = parseInt(x);
 let val2 = parseInt(y);
-*
 console.log(" ");
 console.log("calculatrice: ")
 
@@ -157,7 +156,7 @@ switch(action){
         console.log("division: "+division(val1,val2));
     break;
 }
-*/
+
 
 
 /*
