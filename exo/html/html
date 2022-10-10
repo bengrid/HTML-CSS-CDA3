@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div> Lien à cliquer:<a id="output1" href="#">Mon lien</a></div>
+
+    <div id="output2"> L'espoir est un fluide nécessaire à l'homme
+        comme l'eau à la terre, il déclenche des forces insoupçonnées de
+        la nature humaine.
+        </div>
+    
+        <div id="output3" >Voici une liste de langages en informatique :<br>
+            <dl>
+            <dt>Application desktop</dt>
+            <dd>Java</dd>
+            <dt>Application WEB</dt>
+            <dd>Angular</dd>
+            <dt>Base de donnée</dt>
+            <dd>NO SQL</dd>
+            <dt>IA</dt>
+            <dd>PYTHON</dd>
+            </dl>
+            <p> Le choix des technologies pour un projet varie selon les besoins et les contraintes imposées par le
+            client</p> </div>
+
+    <script src="../js/javascript.js"></script>
+</body>
+</html>
