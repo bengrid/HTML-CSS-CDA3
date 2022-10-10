@@ -16,9 +16,47 @@ function groupes(){
     var array2 = participants.splice(0,ppg);
     var array3 = participants.splice(0,ppg);
     var array4 = participants.splice(0,ppg);
-    for(let i = 0; i<5;i++){
-        if(array)
-    };
+    console.log("nbG"+nbGroupes);
+    switch(nbGroupes){
+        case "1":
+
+            lesGroupes.push(array0);
+            console.log("nb1");
+            break;
+        case "2":
+
+            lesGroupes.push(array0);
+            lesGroupes.push(array1);
+            console.log("nb2");
+            break;
+        case "3":
+
+            lesGroupes.push(array0);
+            lesGroupes.push(array1);
+            lesGroupes.push(array2);
+            console.log("nb3");
+            break;
+        case "4":
+
+            lesGroupes.push(array0);
+            lesGroupes.push(array1);
+            lesGroupes.push(array2);
+            lesGroupes.push(array3);
+            console.log("nb4");
+            break;
+        case "5":
+            lesGroupes.push(array0);
+            lesGroupes.push(array1);
+            lesGroupes.push(array2);
+            lesGroupes.push(array3);
+            lesGroupes.push(array4);
+            console.log("nb5");
+            break;
+    }
+    
+    for(const unGroupe of lesGroupes){
+        console.log(unGroupe);
+        }
+    
     console.log(ppg);
-    console.log(array2);
-}
+};
