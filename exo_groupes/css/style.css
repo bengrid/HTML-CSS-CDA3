@@ -1,0 +1,25 @@
+.divGroupes{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 10px;
+    max-width: 20em;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+.background{
+    background-color: lightgray;
+}
+
+.txt{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    margin: 5px;
+}

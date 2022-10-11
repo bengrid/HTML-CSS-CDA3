@@ -1,22 +1,44 @@
 let participants = [];
 let lesGroupes = [];
 
-function ajout(){
-    participants.push(document.getElementById("nomParticipant").value);
-    console.log(participants);
-    console.log(participants.length);
+class Participant{
+    constructor(nom,niveau){
+        this.nom = nom;
+        this.niveau = niveau;
+    }
 }
 
+function ajout()
+{
+    /*var leNom = document.getElementById("nomParticipant").value;
+    var leNiv = document.getElementById("niveauParticipant").value;
+    if(leNom && leNiv != ""){
+    var unParticipant = new Participant(leNom,leNiv);
+    console.log(unParticipant);
+    participants.push(unParticipant);
+    }
+    else{alert("Il manque une ou plusieurs information(s)")
+    }*/
+    participants.push(document.getElementById("nomParticipant").value) 
+    let divP = document.createElement("div");
+    divP.id = "Candidat";
+    divP.textContent="Prenom: "+document.getElementById("nomParticipant").value+" Niveau: "+document.getElementById("niveauParticipant").value;
+    document.body.appendChild(divP);
+}
+
+
+
 function groupes(){
+    
     let nbGroupes = document.getElementById("nbGroupes").value;
     let nbParticipants = participants.length;
-    let ppg = nbParticipants / nbGroupes;
-    var array0 = participants.splice(0,ppg);
-    var array1 = participants.splice(0,ppg);
-    var array2 = participants.splice(0,ppg);
-    var array3 = participants.splice(0,ppg);
-    var array4 = participants.splice(0,ppg);
-    console.log("nbG"+nbGroupes);
+    if(nbParticipants >= nbGroupes){
+    let ppg = nbParticipants / nbGroupes
+    var array0 = participants.splice(/*Math.random() * (participants.length - 0) +*/ 0,ppg);
+    var array1 = participants.splice(/*Math.random() * (participants.length - 0) +*/ 0,ppg);
+    var array2 = participants.splice(/*Math.random() * (participants.length - 0) +*/ 0,ppg);
+    var array3 = participants.splice(/*Math.random() * (participants.length - 0) +*/ 0,ppg);
+    var array4 = participants.splice(/*Math.random() * (participants.length - 0) +*/ 0,ppg);
     switch(nbGroupes){
         case "1":
 
@@ -55,8 +77,19 @@ function groupes(){
     }
     
     for(const unGroupe of lesGroupes){
-        console.log(unGroupe);
+        let divG = document.createElement("div");
+        divG.id = "groupes";
+        /*for(const unCandidat of unGroupe){
+            divG.textContent = unCandidat.nom;
+            console.log("candidat: "+unCandidat.nom)
+        }*/
+        divG.textContent=unGroupe;
+        divG.classList.add("border");
+        divG.classList.add("background");
+        divG.classList.add("divGroupes");
+        document.body.appendChild(divG);
         }
-    
-    console.log(ppg);
-};
+    }else{
+        alert("Pas assez de participants")
+    }
+    };

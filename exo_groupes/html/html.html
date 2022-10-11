@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>Document</title>
 </head>
 <body>
-    Nombre de groupes: 
-    <input id="nbGroupes" type="number" min="1" max="5" value="1">
+    <div class="tout">
+    Nombre de groupe: 
+    <input id="nbGroupes" class="txt" type="number" min="1" max="5" value="1" >
 </br>
-    Nom:
-    <input id="nomParticipant" type="text">
+    Prenom:
+    <input id="nomParticipant" class="txt" type="text" >
     </br>
-<button id="btnAjouter" onclick="ajout()" type="button">ajouter participants</button>
-<button id="btnValider" onclick="groupes()" type="button">generer groupes</button>
+    Niveau: 
+    <input id="niveauParticipant" class="txt" type="number" min="1" max="5" value="1" >
+    </br>
+<button id="btnAjouter" class="btn" onclick="ajout()" type="button">Ajouter participants</button>
+<button id="btnValider" class="btn" onclick="groupes()" type="button">Generer groupes</button>
+</div>
     <script src="../js/js.js"></script>
 </body>
 </html>
