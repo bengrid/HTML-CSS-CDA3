@@ -1,0 +1,18 @@
+{
+  "name": "administrateur",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Benjamin",
+  "license": "ISC",
+  "devDependencies": {
+    "coffee-script": "^1.12.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "description": "",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
