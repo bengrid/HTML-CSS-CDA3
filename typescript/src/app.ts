@@ -1,96 +1,24 @@
-enum type {
-    AUTO = "voiture",
-    CAMION = "camion",
-    MOTO = "moto"   
-}
-abstract class Vehicule {
+import{} from "./components/PersonneMethod"
 
-    nbRoue: number;
-    poidVehicule: number;
-    volumeTransportable: number;
-    marque: string;
+class Person2 implements PersonnePrintAge{
+    firstname: string;
+    lastname?: string;
+    agePerso: number;
 
-    constructor(nbRoue: number, poidVehicule: number, volumeTransportable: number, marque: string){
-        this.nbRoue = nbRoue;
-        this.poidVehicule = poidVehicule;
-        this.volumeTransportable = volumeTransportable;
-        this.marque = marque;
+    constructor(fn: string, ap: number, ln?: string){
+        this.firstname = fn;
+        this.agePerso = ap;
+        if(ln){
+            this.lastname = ln;
+        }
     }
 
-    abstract afficherVolumeTransportable(): number;
+    greetings(phrase: string){
+        console.log(phrase + this.firstname);
+    }
 
-    abstract bruitMoteur(): string;
-        
+    printAge(): void {
+        console.log("J'ai "+this.agePerso+" ans ");
+    }
     
-}
-
-class Voiture extends Vehicule {
-
-    constructor(nbRoue: number,poidVehicule: number, volumeTranspotable: number,marque: string){
-        super(nbRoue, poidVehicule, volumeTranspotable, marque);
-    }
-
-    afficherVolumeTransportable(): number{
-        console.log(`Le volume transportable est de: ${this.volumeTransportable}`);
-        return this.volumeTransportable;
-    };
-
-    bruitMoteur(): string {
-        console.log("Le bruit du moteur est: "+type.AUTO);
-        return (`Le bruit du moteur est: ${type.AUTO}`);
-    };
-}
-
-
-class Camion extends Vehicule {
-
-    constructor(nbRoue: number,poidVehicule: number, volumeTranspotable: number,marque: string){
-        super(nbRoue, poidVehicule, volumeTranspotable, marque);
-    }
-
-    afficherVolumeTransportable(): number{
-        console.log(`Le volume transportable est de: ${this.volumeTransportable}`);
-        return this.volumeTransportable;
-    };
-
-    bruitMoteur(): string {
-        console.log("Le bruit du moteur est: "+type.CAMION);
-        return (`Le bruit du moteur est: ${type.CAMION}`);
-    };
-
-}
-
-class Moto extends Vehicule {
-
-    constructor(nbRoue: number,poidVehicule: number, volumeTranspotable: number,marque: string){
-        super(nbRoue, poidVehicule, volumeTranspotable, marque);
-    }
-
-    afficherVolumeTransportable(): number{
-        console.log(`Le volume transportable est de: ${this.volumeTransportable}`);
-        return this.volumeTransportable;
-    };
-
-    bruitMoteur(): string {
-        console.log("Le bruit du moteur est: "+type.MOTO);
-        return (`Le bruit du moteur est: ${type.MOTO}`);
-    };
-
-
-}
-
-let C: Vehicule = new Camion(8, 5500, 10000, "Renault");
-let M: Vehicule = new Camion(2, 350, 60, "Suzuki");
-let V: Vehicule = new Camion(4, 1000, 300, "Peugeot");
-
-console.log(C);
-console.log(M);
-console.log(V);
-
-M.afficherVolumeTransportable();
-V.afficherVolumeTransportable();
-C.afficherVolumeTransportable();
-
-M.bruitMoteur();
-V.bruitMoteur();
-C.bruitMoteur();
+};

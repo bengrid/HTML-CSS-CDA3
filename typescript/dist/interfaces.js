@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Person2 {
     constructor(fn, ap, ln) {
         this.firstname = fn;
@@ -15,4 +14,8 @@ class Person2 {
         console.log("J'ai " + this.agePerso + " ans ");
     }
 }
-;
+const p2 = new Person2("Benjamin", 22, "Rorowski");
+p2.greetings("Salut je m'appelle ");
+p2.printAge();
+console.log(p2);
+const p3 = new Person2("José", 56);
